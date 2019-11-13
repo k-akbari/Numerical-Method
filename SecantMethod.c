@@ -8,7 +8,7 @@ double f(double x){
     return 10-x*x;
 }
 
-void bisectionMethod(double x1,double x2){
+void secantMethod(double x1,double x2){
 
     double f1 = f(x1);
     double f2 = f(x2);
@@ -29,9 +29,9 @@ void bisectionMethod(double x1,double x2){
     }
 
     printf("\n%f %f %f %f %f %f",x1,x2,x,f1,f2,f);
-    bisectionMethod(x2,x1);
+    secantMethod(x2,x1);
 }
 
 int main(){
-    bisectionMethod(-2,5);
+    secantMethod(-2,5);
 }
